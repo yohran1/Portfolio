@@ -1,0 +1,265 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /*margin: auto;*/
+    box-sizing: border-box;
+}
+hr{
+    margin: 20px 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(211, 179, 184);
+}
+.logo-menu{
+    background-image: url('../IMG/bolo-icone.png');
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+
+}
+.menu ul li{ 
+    list-style: none;
+}
+.usuario{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    position: sticky; 
+    justify-content: space-between;
+    /*background-color: gray;*/
+    background-color: white;
+    top: 5vh;
+    margin-bottom: 3%;
+    
+}
+.logo-menu-1{
+    /*background-color: aquamarine;*/
+    
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    /*background-color: rgb(211, 179, 184);*/
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    
+}
+.box-2{
+    /*background-color: violet;*/
+    width: 80%;
+    height: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding: 10px;
+}
+.container{
+    max-width: 90vw;
+    text-align: center;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.conteudo /*,.conteudo1, .conteudo2*/{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: transparent;
+}
+.c1{
+    background-image: url('../IMG/bolo-layout-4.jpg');
+    width: 90vw;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+.arm{
+    display: flex;
+    width: 30vw;
+    height: 60vh;
+    background-color: rgba(247, 235, 237, 1);
+}
+.no{
+    background-color: transparent;
+}
+.c2{
+    text-align: center;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 20vw;
+}
+.h2{
+    margin-bottom: 8vh;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+span{
+    color: rgb(211, 179, 184);
+}
+.c3{
+    background-image: url('../IMG/bolo-branco.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30vw;
+}
+.c4{
+    background-image: url('../IMG/bolo-branco-tres-andares.webp');
+    background-size: cover;
+    margin: 10px 10px;
+}
+.c5{
+    background-image: url('../IMG/confeiteiro.webp');
+    background-size: cover;
+    margin: 10px 10px;
+}
+.c6{
+    background-image: url('../IMG/bolo-branco-tres-andares.webp');
+    background-size: cover;
+    margin: 10px 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(211, 179, 184); 
+    
+}
+.pedido{
+    background-color: white;
+    border: 1px solid black;
+    width: 190px;
+    height: 40px;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    padding: 10px;
+    font-size: 12px;
+}
+.pedido:hover{
+    background-color: black;
+    color: white;
+    transition: background 1.5s;
+}
+.box-pedido{
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+li{
+    display: inline-block;
+    padding: 10px;
+}
+img{
+    border-radius: 25px;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 250px;
+    background: #444;
+    color: white;
+}
+footer .boxs{
+    width: 320px;
+    min-height: 150px;
+    text-align: center;
+    padding: 20px;
+}
+.boxs ul li{
+    margin: 10px 0px;
+}
+.boxs ul li a{
+    color: #ddd;
+}
+.boxs ul li a:hover{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 20px;
+}
+.boxs p{
+    color: #ddd;
+    text-align: justify;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 0px 20px;
+}
+.footer .socials{
+    display: flex;
+}
+.socials .social{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #ddd;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background .3s linear;
+    
+}
+.socials .social a{
+    color: #000;
+    font-size: 1.5rem;
+}
+.socials .social:hover{
+    background: #444;
+}
+.socials .social:hover a{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 950px){
+    footer{
+        flex-direction: column;
+    }
+    footer .boxs{
+        width: 100%;
+        text-align: center;
+    }
+
+}
