@@ -29,9 +29,9 @@ body{
 }
 .perfil-img{
     background-size: cover;
-    background-position: center;
+    
     margin: auto;
-    background-image: url('../img/perfil-1.jpg');
+    background-image: url('../img/y-3.jpg');
     width: 200px;
     height: 200px;
     border-radius: 100px;
