@@ -34,9 +34,8 @@ hr{
     justify-content: space-between;
     /*background-color: gray;*/
     background-color: white;
-    top: 5vh;
-    margin-bottom: 3%;
-    
+    top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .logo-menu-1{
     /*background-color: aquamarine;*/
