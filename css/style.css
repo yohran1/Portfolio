@@ -6,6 +6,15 @@ body{
     background-image: url('../img/fundo-1.jpg');
     background-size: cover;
 }
+.bg{
+    background-color: rgba(145, 42, 94, 0.445);
+    border-radius: 10px;
+    padding: 10px;
+}
+p{
+    color: white;
+    text-align: justify;
+}
 .name{
     padding: 30px;
     text-align: center;
