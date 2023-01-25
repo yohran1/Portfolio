@@ -69,7 +69,7 @@ hr{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.conteudo /*,.conteudo1, .conteudo2*/{
+.conteudo{
     display: flex;
     justify-content: space-between;
     
