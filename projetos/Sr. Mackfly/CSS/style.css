@@ -213,6 +213,9 @@ footer .boxs{
 }
 
     @media(max-width: 550px){
+        .container{
+            padding: 0px;
+        }
         .header{
             display: inline-block;
         }
@@ -233,7 +236,20 @@ footer .boxs{
             top: 0px;
             padding: 0px;
         }
-        
+        .arm{
+            width: 100%;
+        }
+        .c2{
+            font-size: 12px;
+            width: 300px;
+            padding: 30px;
+        }
+        p{
+            text-align: justify;
+        }
+        .c3{
+            width: 100%;
+        }
         
         
 
