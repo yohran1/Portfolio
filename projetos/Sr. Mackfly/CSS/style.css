@@ -250,16 +250,11 @@ footer .boxs{
         .c3{
             width: 100%;
         }
-        
-        
+        .bps{
+            display: block;
+        }
 
     }
-
-
-
-
-
-
 @media(max-width: 950px){
     footer{
         flex-direction: column;
