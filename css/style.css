@@ -70,14 +70,14 @@ li{
     border-radius: 20px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 650px){
     .container{
         width: 80%;
-        padding: 0px;
+        padding: 10px;
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 500px){
     .container{
         width: 80%;
         padding: 10px;
