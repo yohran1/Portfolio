@@ -88,9 +88,19 @@
     background-color: #3f344b4d;
     border-radius: 10px;
 }
-
+@media(max-width: 2000px){
+    .card_portfolio{
+        height: 60vh;
+    }
+}
+@media(max-width: 1500px){
+    .card_portfolio{
+        height: 90vh
+    }
+}
 @media(max-width: 700px){
     .card_portfolio{
         width: 80%;
+        height: 90vh;
     }
 }
