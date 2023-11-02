@@ -4,9 +4,9 @@ import style from './Login.module.css'
 import SubmitButton from '../../form/SubmitButton'
 import LinkButton from '../../layout/LinkButton'
 import { useState } from 'react'
+import Message from './Message'
 
 export default function ForgotPassword(){
-
     const [message, setMessage] = useState('Aguardando confirmação do usuário!')
 
     return(
@@ -21,9 +21,7 @@ export default function ForgotPassword(){
                         name='password'
                         placeholder='Digite nova senha!'
                     />
-                    <div className={style.message}>
-                        <p>{message}</p>
-                    </div>
+                    <Message  message={message}/>
                     
                     <div className={style.buttons}>
                         <SubmitButton text='Salvar'/>   

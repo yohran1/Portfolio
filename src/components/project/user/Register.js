@@ -2,11 +2,14 @@ import Container from "../../layout/Container";
 import Input from "../../form/Input";
 import style from './Login.module.css'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import Facebook from './img/facebook.png'
 import GitHub from './img/github.png'
 import SubmitButton from "../../form/SubmitButton";
+import Message from "./Message";
 
 export default function Register(){
+    const [message, setMessage] = useState('Aguardando confirmação do usuário!')
 
     return(
         <Container>
@@ -32,6 +35,7 @@ export default function Register(){
                     placeholder='Digite sua senha!'
                 />
             </div>
+                <Message message={message}/>
                 <SubmitButton text='Registro'/>
             <div className={style.has_registration}>
                 <Link to="/projeto/login">Já possui cadastro?</Link>
