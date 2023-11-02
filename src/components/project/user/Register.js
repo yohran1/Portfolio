@@ -4,6 +4,7 @@ import style from './Login.module.css'
 import { Link } from 'react-router-dom'
 import Facebook from './img/facebook.png'
 import GitHub from './img/github.png'
+import SubmitButton from "../../form/SubmitButton";
 
 export default function Register(){
 
@@ -11,7 +12,7 @@ export default function Register(){
         <Container>
             <form className={style.formLogin} id="form">
             <div className={style.headerLogin}>
-                <h1>Register</h1>
+                <h1>Registro</h1>
             </div>
 
             <div className={style.inputsLogin}>
@@ -23,7 +24,7 @@ export default function Register(){
                 <Input 
                     type='email'
                     name='email'
-                    placeholder='Digite sua email!'
+                    placeholder='Digite seu email!'
                 />
                 <Input 
                     type='password'
@@ -31,7 +32,7 @@ export default function Register(){
                     placeholder='Digite sua senha!'
                 />
             </div>
-                <button type="submit" className={style.login_btn}>Register</button>
+                <SubmitButton text='Registro'/>
             <div className={style.has_registration}>
                 <Link to="/projeto/login">Já possui cadastro?</Link>
             </div>

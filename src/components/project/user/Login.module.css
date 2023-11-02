@@ -1,3 +1,7 @@
+body{
+  background: linear-gradient(45deg, rgb(0, 0, 0), #221133ce);
+
+}
 :root{
     --color-light-50: #f8fafc;
     --color-dark-50: #797984;
@@ -100,19 +104,6 @@
   .forgot_password a:hover{
     color: var(--color-purple-100);
   }
-  .login_btn{
-    border: none;
-    background-color: rgb(255, 218, 238);
-    color: var(--color-dark-100);
-    padding: 7px;
-    font-size: 18px;
-    border-radius: 3px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .login_btn:hover{
-    transform: scale(1.05);
-  }
   .has_registration{
     margin-top: 20px;
 }
@@ -123,6 +114,16 @@
 }
 .has_registration a:hover{
     color: var(--color-purple-100);
+}
+.message{
+  border: 1px solid rgb(255, 218, 238);
+  background-color: rgba(255, 218, 238, 0.233);
+  padding: 0.5em;
+  text-align: center;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
 }
 @media(max-width: 2000px){
     .formLogin{

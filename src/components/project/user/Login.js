@@ -1,4 +1,5 @@
 import Container from '../../layout/Container'
+import SubmitButton from '../../form/SubmitButton'
 import { Link } from 'react-router-dom'
 import style from './Login.module.css'
 import Facebook from './img/facebook.png'
@@ -27,13 +28,13 @@ export default function Login(){
                         placeholder='Digite sua senha!'
                     />
                 </div>
-                    <button type="submit" className={style.login_btn}>Login</button>
+                    <SubmitButton text='Login'/>
                 <div className={style.linksLogin}>
                 <div className={style.forgot_password}>
-                    <a href="https://jsonplaceholder.typicode.com/todos">Esqueceu sua senha?</a>
+                    <Link to="/projeto/forgotpassword">Esqueceu sua senha?</Link>
                 </div>
                     <div className={style.forgot_password}>
-                        <Link to="/projeto/register">Register</Link>
+                        <Link to="/projeto/register">Cadastre-se</Link>
                     </div>
                 </div>
                 <div className={style.social_media_login}>

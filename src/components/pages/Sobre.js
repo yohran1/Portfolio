@@ -11,7 +11,7 @@ export default function Sobre(){
             <section className={style.card_portfolio}>
                 <img src={foto} alt='perfil' />
                 <h2>Yohran</h2>
-                <p>Olé me chamo Yohran sou natural de Florianópolis/SC, 
+                <p>Olá me chamo Yohran sou natural de Florianópolis/SC, 
                    tenho 23 anos, apaixonado pela tecnologia e sua
                    evolução ao longo dos anos podendo nos proporcionar
                    grandes e melhores revolução no mundo moderno,

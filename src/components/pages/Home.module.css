@@ -37,6 +37,7 @@
 }
 .card_portfolio ul{
     width: 50%;
+    height: 80vh;
     list-style: none;
     text-align: center;
 }
