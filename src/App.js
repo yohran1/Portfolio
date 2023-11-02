@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './components/pages/Home';
 import Login from './components/project/user/Login';
 import Sobre from './components/pages/Sobre';
+import Register from './components/project/user/Register';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/sobre' element={<Sobre />} />
-            <Route path='/projeto' element={<Login />} />
+            <Route path='/projeto/login' element={<Login />} />
+            <Route path='/projeto/register' element={<Register />} />
           </Routes> 
     </BrowserRouter>
   );
