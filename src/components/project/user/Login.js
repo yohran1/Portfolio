@@ -12,7 +12,6 @@ export default function Login(){
             <form className={style.formLogin} id="form">
                 <div className={style.headerLogin}>
                     <h1>Login</h1>
-                    <i className="fa-solid fa-moon icon-moon"> <div className={style.i_txt}>theme</div></i>
                 </div>
                 <div className={style.inputsLogin}>
                     <Input 

@@ -5,8 +5,10 @@ export default function Input({type, name, placeholder, handleOnChange, value}){
     function Icon(text){
         if(text === 'email'){
             return <i className="fa-solid fa-envelope"> </i>                
-        }else{
+        }else if(text === 'password'){
            return <i className="fa-solid fa-key"> </i>
+        }else{
+            return <i className="fa-solid fa-user"></i>
         }
     }
     return(
