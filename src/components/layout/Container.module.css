@@ -11,3 +11,8 @@
 .min-height{
     min-height: 75%;
 }
+.column, body{
+    flex-direction: column;
+    background-color: white;
+
+}
