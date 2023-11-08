@@ -12,6 +12,9 @@
     width: 20%;
     height: 25px;
 }
+.footer svg:hover{
+    color: rgb(255, 218, 238);
+}
 .footer p{
     text-align: center;
     color: gray;

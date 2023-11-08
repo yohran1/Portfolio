@@ -5,6 +5,7 @@ import style from './Login.module.css'
 import Facebook from './img/facebook.png'
 import GitHub from './img/github.png'
 import Input from '../../form/Input'
+import Footer from '../../layout/Footer'
 
 export default function Login(){
 
@@ -46,6 +47,7 @@ export default function Login(){
                     </a>
                 </div>
             </form>
+            <Footer />
         </Container>
     )
 }

@@ -7,6 +7,7 @@ import Facebook from './img/facebook.png'
 import GitHub from './img/github.png'
 import SubmitButton from "../../form/SubmitButton";
 import Message from "./Message";
+import Footer from "../../layout/Footer";
 
 export default function Register(){
     const [message, setMessage] = useState('Aguardando confirmação do usuário!')
@@ -50,6 +51,7 @@ export default function Register(){
                 </a>
             </div>
         </form>
+        <Footer />
         </Container>
     )
 }

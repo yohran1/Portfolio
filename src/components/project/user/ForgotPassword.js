@@ -5,6 +5,7 @@ import SubmitButton from '../../form/SubmitButton'
 import LinkButton from '../../layout/LinkButton'
 import { useState } from 'react'
 import Message from './Message'
+import Footer from '../../layout/Footer'
 
 export default function ForgotPassword(){
     const [message, setMessage] = useState('Aguardando confirmação do usuário!')
@@ -29,6 +30,7 @@ export default function ForgotPassword(){
                     </div>
                 </div>
             </form>
+            <Footer />
         </Container>
     )
 }

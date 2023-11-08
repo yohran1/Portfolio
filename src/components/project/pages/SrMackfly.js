@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom'
 import Container from '../../layout/Container'
-import style from './SrMackfly.module.css'
+import Footer from '../../layout/Footer'
 
 export default function SrMackfly(){
 
@@ -9,7 +8,7 @@ export default function SrMackfly(){
             <div>NavBAr</div>
             <h1>Home</h1>
             <footer>Footer</footer>
-
+            <Footer />
         </Container>
     )
 }

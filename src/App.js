@@ -5,8 +5,6 @@ import Sobre from './components/pages/Sobre';
 import Register from './components/project/user/Register';
 import ForgotPassword from './components/project/user/ForgotPassword';
 import SrMackfly from './components/project/pages/SrMackfly';
-import Footer from './components/layout/Footer';
-
 
 function App() {
   return (
@@ -19,7 +17,6 @@ function App() {
             <Route path='/projeto/forgotpassword' element={<ForgotPassword />} />
             <Route path='/projeto/srmackfly' element={<SrMackfly />}/>
           </Routes> 
-          <Footer />
     </BrowserRouter>
   );
 }
