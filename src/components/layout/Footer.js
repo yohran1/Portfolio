@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin } from 'react-icons/fa'
 import { TiUserOutline } from 'react-icons/ti'
 import style from './Footer.module.css'
@@ -8,7 +7,7 @@ export default function Footer(){
 
     return (
         <footer className={style.footer}>
-                <TiUserOutline />
+            <a href='http://localhost:3000/projeto/srmackfly'><TiUserOutline /></a>
 
             <p>Yohran Kallahari | Sr-Mackfly &copy;</p>
 

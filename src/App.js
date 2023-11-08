@@ -5,10 +5,12 @@ import Sobre from './components/pages/Sobre';
 import Register from './components/project/user/Register';
 import ForgotPassword from './components/project/user/ForgotPassword';
 import SrMackfly from './components/project/pages/SrMackfly';
+import Container from './components/layout/Container';
 
 function App() {
   return (
     <BrowserRouter>
+        <Container>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/sobre' element={<Sobre />} />
@@ -17,6 +19,7 @@ function App() {
             <Route path='/projeto/forgotpassword' element={<ForgotPassword />} />
             <Route path='/projeto/srmackfly' element={<SrMackfly />}/>
           </Routes> 
+        </Container>
     </BrowserRouter>
   );
 }
