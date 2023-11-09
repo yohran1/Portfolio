@@ -1,11 +1,12 @@
 import Container from '../../layout/Container'
 import Footer from '../../layout/Footer'
+import NavBar from '../components/NavBar'
 
 export default function SrMackfly(){
 
     return (
         <Container customClass='column'>
-            <div>NavBAr</div>
+            <NavBar />
             <h1>Home</h1>
             <footer>Footer</footer>
             <Footer />

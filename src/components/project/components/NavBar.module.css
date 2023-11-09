@@ -1,0 +1,38 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+}
+.logo{
+    width: 15%;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 30%;
+    height: 50px;
+}
+.navBar ul{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+.navBar ul li{
+    margin-right: 10px;
+    list-style: none;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 218, 238);
+
+}
+.navBar ul li:hover{
+    background-color: rgba(247, 235, 237, 1);
+}
+.navBar ul li a{
+    color: black;
+    text-decoration: none;
+}
+
