@@ -5,44 +5,48 @@
     text-align: center;
     position: sticky;
 }
-.logo{
-    width: 15%;
+.logo a{
     display: flex;
-    text-decoration: none;
-    color: black;
-    text-align: start;
     align-items: center;
     justify-content: center;
+    text-align: start;
+    text-decoration: none;
+    color: black;
+    width: 35%;
 }
 .logo img{
     width: 30%;
     height: 50px;
 }
-.navBar ul{
-    width: 43%;
+.nav_list{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.navBar ul li{
-    border-right: 1px solid black;
+.nav_list ul {
+    display: flex;
+}
+.nav_list li{
     text-align: center;
     list-style: none;
 }
-.navBar ul li a{
+.nav_list li a{
     color: black;
     text-decoration: none;
 }
-.navBar ul li:hover{
+.nav_list li:hover{
     background-color: rgba(255, 218, 238, 0.637);
 }
-.navBar ul button{
+.login_btn{
+    text-align: end;
+}
+.login_btn button{
+    width: 60px;
     border: none;
     height: 20px;
     background-color: rgb(255, 218, 238);
     cursor: pointer;
 }
-.navBar ul button:hover{
+.login_btn button:hover{
     background-color: rgba(247, 235, 237, 1);
-
 }
