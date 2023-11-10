@@ -8,7 +8,10 @@ export default function SrMackfly(){
         <Container customClass='column'>
             <NavBar />
             <h1>Home</h1>
-            <footer>Footer</footer>
+
+            
+
+            <footer>Footer Information</footer>
             <Footer />
         </Container>
     )

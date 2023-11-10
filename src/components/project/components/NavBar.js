@@ -6,17 +6,18 @@ export default function NavBar(){
 
     return(
         <div className={style.navBar}>
-            <div className={style.logo}>
+
+            <Link to='/projeto/srmackfly' className={style.logo}>
                 <img src={icon} alt={icon} />
                 <p>Bolos de Casamento Por Sr-MackFly</p>
-            </div>
+            </Link>
 
             <ul>
                 <li><Link to='/projeto/srmackfly'>Página Inicial</Link></li>
                 <li><Link to='/projeto/srmackfly'>Peça Online</Link></li>
                 <li><Link to='/projeto/srmackfly'>Contato</Link></li>
                 <li><Link to='/projeto/srmackfly'>Sobre</Link></li>
-                <li><a href='http://localhost:3000/projeto/login'>Login | Registro</a></li>
+                <a href='http://localhost:3000/projeto/login'><button>Login</button></a>
             </ul>
         </div>
     )
