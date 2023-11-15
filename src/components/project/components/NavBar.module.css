@@ -4,6 +4,8 @@
     align-items: center;
     text-align: center;
     position: sticky;
+    top: 0;
+    background-color: white;
 }
 .logo a{
     display: flex;
@@ -52,10 +54,27 @@
     border-radius: 5px;
     width: 70px;
     border: none;
-    height: 50px;
+    height: 40px;
+    margin: auto;
     background-color: rgb(255, 218, 238);
     cursor: pointer;
 }
 .login_btn button:hover{
     background-color: rgba(247, 235, 237, 1);
+}
+@media(max-width:700px){
+        .navBar{
+            display: block;
+            height: 117px;
+        }
+        .logo a{
+            text-align: center;
+            margin: auto;
+        }
+        .login_btn a{
+            margin: 10px auto;
+        }
+        .login_btn a button{
+            height: 30px;
+        }
 }
