@@ -8,7 +8,7 @@ import confeiteiro from '../img/cakes/confeiteiro.webp'
 export default function CakesSection(){
 
     return(
-        <section className={style.section}>
+        <section>
 
             <div className={style.cakes_section}>
                 <div className={style.info}>

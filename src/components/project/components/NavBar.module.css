@@ -17,6 +17,9 @@
     color: black;
     width: 43%;
 }
+.logo a:hover{
+    color: rgb(255, 218, 238);
+}
 .logo img{
     width: 30%;
     height: 50px;
