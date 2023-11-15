@@ -4,7 +4,7 @@ import Login from './components/project/user/Login';
 import Sobre from './components/pages/Sobre';
 import Register from './components/project/user/Register';
 import ForgotPassword from './components/project/user/ForgotPassword';
-import SrMackfly from './components/project/pages/SrMackfly';
+import SrMackfly from './components/project/components/pages/SrMackfly';
 import Container from './components/layout/Container';
 
 function App() {
