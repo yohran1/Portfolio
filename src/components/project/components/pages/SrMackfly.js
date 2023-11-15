@@ -5,6 +5,7 @@ import NavBar from '../NavBar'
 import cakes_1 from '../../img/cakes/bolo-layout-4.jpg'
 import CakesSection from '../CakesSection'
 import Carrossel from '../Carrossel'
+import FooterInformations from '../../../layout/FooterInformations'
 
 export default function SrMackfly(){
 
@@ -17,11 +18,10 @@ export default function SrMackfly(){
                 </div>
                 <CakesSection />
                 <Carrossel />
+
             </div>
-
-            
-
-            <footer>Footer Information</footer>
+            {/* <footer>Footer Information</footer> */}
+            <FooterInformations />
             <Footer />
         </Container>
     )
