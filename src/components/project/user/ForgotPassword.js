@@ -11,7 +11,7 @@ export default function ForgotPassword(){
     const [message, setMessage] = useState('Aguardando confirmação do usuário!')
 
     return(
-        <Container>
+        <Container customClass='column'>
             <form className={style.formLogin}>
                 <div className={style.headerLogin}>
                     <h2>Digite nova senha!</h2>

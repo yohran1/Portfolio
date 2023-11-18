@@ -47,3 +47,24 @@
     border-bottom: 1px solid rgb(255, 158, 210);
     color: rgb(255, 158, 210);
 }
+
+@media(max-width:700px){
+    .header{
+        width: 100%;
+    }
+    .menu{
+        margin-top: 10px;
+    }
+    .menu h3{
+        font-size: 15px;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    .menu ul{
+        text-align: center;
+    }
+    .menu ul a{
+        width: 100%;
+    }
+}

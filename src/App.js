@@ -5,13 +5,11 @@ import Sobre from './components/pages/Sobre';
 import Register from './components/project/user/Register';
 import ForgotPassword from './components/project/user/ForgotPassword';
 import SrMackfly from './components/project/components/pages/SrMackfly';
-import Container from './components/layout/Container';
 import PecaOnline from './components/project/components/pages/PecaOnline';
 
 function App() {
   return (
     <BrowserRouter>
-        <Container>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/sobre' element={<Sobre />} />
@@ -22,7 +20,6 @@ function App() {
             <Route path='/projeto/pecaOnline' element={<PecaOnline />}/>
 
           </Routes> 
-        </Container>
     </BrowserRouter>
   );
 }

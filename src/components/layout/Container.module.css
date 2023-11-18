@@ -2,7 +2,6 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -11,14 +10,18 @@
 }
 .min-height{
     min-height: 75%;
+    flex-wrap: wrap;
     background-color: white;
 }
-.column, body{
+.column{
+    height: 100vh;
     width: 100%;
-    height: auto;
+    display: flex;
     flex-direction: column;
-    background-color: white;
-}
-.bg-login{
-    background: rgba(247, 235, 237, 1);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: center;
+    background: rgba(247, 235, 237, 1)
 }

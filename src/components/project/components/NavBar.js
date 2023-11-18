@@ -23,7 +23,7 @@ export default function NavBar(){
             </div>
             
             <div className={style.login_btn}>
-                <a href='http://localhost:3000/projeto/login'><button>Login</button></a>
+                <a href='http://localhost:3000/projeto/login'><button>Login | Registro</button></a>
             </div>
         </nav>
     )

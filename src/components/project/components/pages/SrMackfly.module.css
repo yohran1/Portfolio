@@ -1,7 +1,7 @@
-
 .container{
     width: 90%;
     height: auto;
+    margin: auto;
 }
 .cakes_1{
     display: flex;

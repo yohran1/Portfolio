@@ -13,7 +13,7 @@ export default function Register(){
     const [message, setMessage] = useState('Aguardando confirmação do usuário!')
 
     return(
-        <Container>
+        <Container customClass='column'>
             <form className={style.formLogin} id="form">
             <div className={style.headerLogin}>
                 <h1>Registro</h1>

@@ -10,7 +10,7 @@ import FooterInformations from '../../../layout/FooterInformations'
 export default function SrMackfly(){
 
     return (
-        <Container customClass='column'>
+        <Container>
             <NavBar />
             <div className={style.container}>
                 <div className={style.cakes_1}>
