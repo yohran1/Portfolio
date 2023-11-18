@@ -10,7 +10,7 @@ import Footer from '../../layout/Footer'
 export default function Login(){
 
     return(
-        <Container>
+        <Container customClass='bg-login'>
             <form className={style.formLogin} id="form">
                 <div className={style.headerLogin}>
                     <h1>Login</h1>

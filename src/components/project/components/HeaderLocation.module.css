@@ -1,6 +1,6 @@
 
 .header{
-    width: 40%;
+    width: 60%;
     text-align: start;
     display: flex;
     justify-content: space-between;
@@ -17,4 +17,33 @@
     border-bottom: 1px solid rgb(255, 158, 210);
     width: 13%;
     text-align: end;
+}
+.menu{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+.menu h3{
+    width: 27%;
+    text-align: start;
+    border-right: 1px solid black;
+}
+.menu ul{
+    display: flex;
+    
+}
+.menu ul a{
+    width: 30%;
+    text-decoration: none;
+    margin-left: 50px;
+}
+.menu ul li{
+    width: 79%;
+    text-align: center;
+    color: black;
+}
+.menu ul li:hover{
+    border-bottom: 1px solid rgb(255, 158, 210);
+    color: rgb(255, 158, 210);
 }

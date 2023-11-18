@@ -11,11 +11,14 @@
 }
 .min-height{
     min-height: 75%;
+    background-color: white;
 }
 .column, body{
     width: 100%;
     height: auto;
     flex-direction: column;
     background-color: white;
-
+}
+.bg-login{
+    background: rgba(247, 235, 237, 1);
 }
