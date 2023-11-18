@@ -11,7 +11,7 @@ import cake_3 from '../../img/cakes/pedido-3.png'
 import cake_4 from '../../img/cakes/pedido-4.png'
 import cake_5 from '../../img/cakes/pedido-5.png'
 import cake_6 from '../../img/cakes/pedido-6.png'
-
+import create from '../../img/cakes/criar.png'
 
 
 
@@ -25,7 +25,7 @@ export default function PecaOnline(){
         <div className={style.container}>
             <HeaderLocation />
             <div className={style.infoPedidos}>
-                <h2>MENU DE BOLOS</h2>
+                {/* <h2>MENU DE BOLOS</h2> */}
                 <p>Encomendar com 3 dias de antecedência</p>
                 <h4>Bolos de Casamento</h4>
             </div>
@@ -65,6 +65,15 @@ export default function PecaOnline(){
                         information='Esse é um item do seu menu. Adicione uma breve descrição.'
                         price={100}
                         img={cake_6}
+                    />
+                </div>
+                <div className={style.pedidos}>
+                    <h3>Personalize Seu Bolo</h3>
+                    <CardCakes 
+                        title='Personalize seu próprio Bolo'
+                        information='Esse é um item do seu menu. Adicione uma breve descrição.'
+                        price='0,00'
+                        img={create}
                     />
                 </div>
             

@@ -24,6 +24,9 @@
     border-bottom: 1px solid black;
     display: flex;
 }
+.menu{
+    margin-top: 30px;
+}
 .menu h3{
     width: 27%;
     text-align: start;
