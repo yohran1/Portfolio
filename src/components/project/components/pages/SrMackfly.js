@@ -20,7 +20,6 @@ export default function SrMackfly(){
                 <Carrossel />
 
             </div>
-            {/* <footer>Footer Information</footer> */}
             <FooterInformations />
             <Footer />
         </Container>

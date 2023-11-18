@@ -16,7 +16,7 @@ export default function NavBar(){
             <div className={style.nav_list}>
                 <ul>
                     <li><Link to='/projeto/srmackfly'>Página Inicial</Link></li>
-                    <li><Link to='/projeto/srmackfly'>Peça Online</Link></li>
+                    <li><Link to='/projeto/pecaOnline'>Peça Online</Link></li>
                     <li><Link to='/projeto/srmackfly'>Contato</Link></li>
                     <li><Link to='/projeto/srmackfly'>Sobre</Link></li>
                 </ul>
