@@ -17,8 +17,8 @@ export default function NavBar(){
                 <ul>
                     <li><Link to='/projeto/srmackfly'>Página Inicial</Link></li>
                     <li><Link to='/projeto/pecaOnline'>Peça Online</Link></li>
-                    <li><Link to='/projeto/srmackfly'>Contato</Link></li>
-                    <li><Link to='/projeto/srmackfly'>Sobre</Link></li>
+                    <li><Link to='/projeto/contato'>Contato</Link></li>
+                    <li><Link to='/projeto/sobre'>Sobre</Link></li>
                 </ul>
             </div>
             

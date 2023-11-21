@@ -6,6 +6,8 @@ import Register from './components/project/user/Register';
 import ForgotPassword from './components/project/user/ForgotPassword';
 import SrMackfly from './components/project/components/pages/SrMackfly';
 import PecaOnline from './components/project/components/pages/PecaOnline';
+import Contato from './components/project/components/pages/Contato'
+import SobreProject from './components/project/components/pages/Sobre';
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
             <Route path='/projeto/forgotpassword' element={<ForgotPassword />} />
             <Route path='/projeto/srmackfly' element={<SrMackfly />}/>
             <Route path='/projeto/pecaOnline' element={<PecaOnline />}/>
-
+            <Route path='/projeto/contato' element={<Contato />} />
+            <Route path='/projeto/sobre' element={<SobreProject />} />
           </Routes> 
     </BrowserRouter>
   );

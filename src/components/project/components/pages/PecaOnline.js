@@ -19,8 +19,7 @@ export default function PecaOnline(){
 
     return (
         <Container customClass='min-height'>
-        <NavBar />
-        
+            <NavBar />
         <section className={style.section}>
         <div className={style.container}>
             <HeaderLocation />
@@ -76,17 +75,9 @@ export default function PecaOnline(){
                         img={create}
                     />
                 </div>
-            
-
-
-
         </div>
         </section>
-        
-
-        
-        
-        <Footer />
+            <Footer />
         </Container>
     )
 }
