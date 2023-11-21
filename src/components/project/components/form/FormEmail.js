@@ -6,7 +6,7 @@ export default function FormEmail(){
 
     return(
         <div className={style.container}>
-            <form className={style}>
+            <form className={style.form}>
                 <div className={style.inputs_user}>
                     <Input 
                         type='text'
