@@ -7,7 +7,7 @@ import confeiteiro from '../../img/cakes/confeiteiro-1.webp'
 export default function Sobre(){
 
     return(
-        <Container customClass='min-height'>
+        <Container>
             <NavBar />
             <section className={style.section}>
                 <div className={style.container}>
