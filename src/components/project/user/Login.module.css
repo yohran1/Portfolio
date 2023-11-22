@@ -113,6 +113,8 @@
     color: var(--color-purple-100);
 }
 .buttons{
+  height: 30px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }

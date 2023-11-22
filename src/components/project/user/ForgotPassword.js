@@ -6,6 +6,7 @@ import LinkButton from '../../layout/LinkButton'
 import { useState } from 'react'
 import Message from './Message'
 import Footer from '../../layout/Footer'
+import { Link } from 'react-router-dom'
 
 export default function ForgotPassword(){
     const [message, setMessage] = useState('Aguardando confirmação do usuário!')
@@ -26,7 +27,9 @@ export default function ForgotPassword(){
                     
                     <div className={style.buttons}>
                         <SubmitButton text='Salvar'/>   
-                        <LinkButton to='/projeto/login' text='Voltar' />
+                        <Link to='/projeto/login'>
+                            <SubmitButton text='Voltar'></SubmitButton> 
+                        </Link>
                     </div>
                 </div>
             </form>

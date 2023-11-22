@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 export default function LinkButton({to, text}){
 
     return( 
-        <Link className={style.btn} to={to}>{text}</Link>
+        <button className={style.btn}>
+            <Link  to={to}>{text}</Link>
+        </button>
+        
     )
 }
