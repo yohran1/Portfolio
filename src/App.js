@@ -8,6 +8,7 @@ import SrMackfly from './components/project/components/pages/SrMackfly';
 import PecaOnline from './components/project/components/pages/PecaOnline';
 import Contato from './components/project/components/pages/Contato'
 import SobreProject from './components/project/components/pages/Sobre';
+import Error from './components/layout/Error';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path='/projeto/pecaOnline' element={<PecaOnline />}/>
             <Route path='/projeto/contato' element={<Contato />} />
             <Route path='/projeto/sobre' element={<SobreProject />} />
+            <Route path='/projeto/error' element={<Error />} />
           </Routes> 
     </BrowserRouter>
   );

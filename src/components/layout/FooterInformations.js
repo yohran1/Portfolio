@@ -10,24 +10,24 @@ export default function FooterInformations(){
                     <h3>Inicio</h3>
                     <ul>
                         <li><Link to="/projeto/srmackfly">Home</Link></li>
-                        <li><Link to="projeto/pecaOnline">Produtos</Link></li>
-                        <li><a href="https://jsonplaceholder.typicode.com/todos">Download</a></li>
+                        <li><Link to="/projeto/pecaOnline">Produtos</Link></li>
+                        <li><a href="/projeto/error">Download</a></li>
                     </ul>
                 </div>
                 <div className={style.boxs}>
                     <h3>Informações</h3>
                     <ul>
-                        <li><a href="https://jsonplaceholder.typicode.com/todos">Blog</a></li>
-                        <li><Link to="projeto/contato">Contato</Link></li>
-                        <li><Link to="projeto/contato">Email</Link></li>
+                        <li><a href="/projeto/error">Blog</a></li>
+                        <li><Link to="/projeto/contato">Contato</Link></li>
+                        <li><Link to="/projeto/contato">Email</Link></li>
                     </ul>
                 </div>
                 <div className={style.boxs}>
                     <h3>Suporte</h3>
                     <ul>
-                        <li><a href="https://jsonplaceholder.typicode.com/todos">FAQ</a></li>
-                        <li><Link to="projeto/contato">Telefone</Link></li>
-                        <li><a href="https://jsonplaceholder.typicode.com/todos">Chat</a></li>
+                        <li><a href="/projeto/error">FAQ</a></li>
+                        <li><Link to="/projeto/contato">Telefone</Link></li>
+                        <li><a href="/projeto/error">Chat</a></li>
                     </ul>
                 </div>
 
