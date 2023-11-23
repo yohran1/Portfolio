@@ -1,4 +1,5 @@
 import style from './CardCakes.module.css'
+import PropType from 'prop-types'
 
 export default function CardCakes({title, information, price, img}){
 
@@ -14,4 +15,17 @@ export default function CardCakes({title, information, price, img}){
             </div>
         </div>
     )
+}
+// const imagem = CardCakes.propType.img = 'https://via.placeholder.com/150'
+CardCakes.propType = {
+    title: PropType.string.isRequired,
+    information: PropType.string.isRequired,
+    price: PropType.string.isRequired && PropType.number.isRequired,
+    img: PropType.string.isRequired
+}
+CardCakes.defaultProps = {
+    title: 'Card',
+    information: 'Information Card',
+    price: '0,00' && Number(0),
+    img: 'https://via.placeholder.com/150'
 }
