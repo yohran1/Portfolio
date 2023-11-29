@@ -1,7 +1,7 @@
 import style from './Input.module.css'
 import PropsType from 'prop-types'
 
-export default function Input({type, name, placeholder, handleOnChange, value}){
+export default function Input({type, name, placeholder, evento_de_mudanca, value}){
     
     function Icon(text){
         if(text === 'email'){
@@ -20,7 +20,7 @@ export default function Input({type, name, placeholder, handleOnChange, value}){
                     type={type}
                     name={name}
                     placeholder={placeholder}
-                    onChange={handleOnChange}
+                    onChange={evento_de_mudanca}
                     value={value}
                     required
                 />

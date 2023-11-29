@@ -8,7 +8,7 @@ import Input from '../../form/Input'
 import Footer from '../../layout/Footer'
 
 export default function Login(){
-
+    
     return(
         <Container customClass='column'>
             <form className={style.formLogin} id="form">
@@ -28,7 +28,6 @@ export default function Login(){
                         name='password'
                         placeholder='Digite sua senha!'
                     />
-            
                 </div>
                     <SubmitButton text='Login'/>
                 <div className={style.linksLogin}>
@@ -48,7 +47,7 @@ export default function Login(){
                     </a>
                 </div>
             </form>
-            <Footer />
+            <Footer msg={'Entre no projeto aqui!'} />
         </Container>
     )
 }

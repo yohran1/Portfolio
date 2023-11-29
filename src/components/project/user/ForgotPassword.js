@@ -2,7 +2,6 @@ import Input from '../../form/Input'
 import Container from '../../layout/Container'
 import style from './Login.module.css'
 import SubmitButton from '../../form/SubmitButton'
-import LinkButton from '../../layout/LinkButton'
 import { useState } from 'react'
 import Message from './Message'
 import Footer from '../../layout/Footer'
@@ -33,7 +32,7 @@ export default function ForgotPassword(){
                     </div>
                 </div>
             </form>
-            <Footer />
+            <Footer msg={'Entre no projeto aqui!'} />
         </Container>
     )
 }

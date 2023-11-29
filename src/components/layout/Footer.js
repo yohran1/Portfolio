@@ -3,11 +3,11 @@ import { TiUserOutline } from 'react-icons/ti'
 import style from './Footer.module.css'
 
 
-export default function Footer(){
+export default function Footer({msg}){
 
     return (
         <footer className={style.footer}>
-            <a href='http://localhost:3000/projeto/srmackfly'><TiUserOutline /></a>
+            <a href='http://localhost:3000/projeto/srmackfly'><TiUserOutline /><span>{msg}</span></a>
 
             <p>Yohran Kallahari | Sr-Mackfly &copy;</p>
 

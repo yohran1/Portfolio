@@ -113,10 +113,14 @@
     color: var(--color-purple-100);
 }
 .buttons{
+  overflow: hidden;
   height: 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.buttons a button{
+  height: 30px;
 }
 @media(max-width: 2000px){
     .formLogin{

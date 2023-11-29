@@ -51,7 +51,7 @@ export default function Register(){
                 </a>
             </div>
         </form>
-        <Footer />
+        <Footer msg={'Entre no projeto aqui!'} />
         </Container>
     )
 }
