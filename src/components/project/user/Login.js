@@ -6,30 +6,55 @@ import Facebook from './img/facebook.png'
 import GitHub from './img/github.png'
 import Input from '../../form/Input'
 import Footer from '../../layout/Footer'
+import Message from './Message'
+import {useState} from 'react'
 
 export default function Login(){
+
+    const [email, setEmail] = useState()
+    const [password, setPassword] = useState()
+    const [userEmail, setUserEmail] = useState()
+    const [userPassword, setUserPassword] = useState()
+
+    function clearEmail(){
+        setUserEmail('')
+    }
+    function enviarDados(event){
+        event.preventDefault()
+        setUserEmail(email)
+        setUserPassword(password)
+        console.log('Email: ' + email)
+        console.log('Senha: ' + password)
+    }
     
     return(
         <Container customClass='column'>
-            <form className={style.formLogin} id="form">
+            <form className={style.formLogin}>
                 <div className={style.headerLogin}>
                     <h1>Login</h1>
                 </div>
                 <div className={style.inputsLogin}>
                     <Input 
-                        type='text'
+                        type='email'
                         text='Email'
                         name='email'
                         placeholder='Digite seu email!'
+                        evento_de_mudanca={(event) => setEmail(event.target.value)}
                     />
                     <Input 
                         type='password'
                         text='Password'
                         name='password'
                         placeholder='Digite sua senha!'
+                        evento_de_mudanca={(event) => setPassword(event.target.value)}
                     />
+                    {userEmail && (
+                        <Message message={userEmail} />
+                    )}
+                    
+                    
                 </div>
-                    <SubmitButton text='Login'/>
+                    <SubmitButton text='Login' onClick={enviarDados}/>
                 <div className={style.linksLogin}>
                 <div className={style.forgot_password}>
                     <Link to="/projeto/forgotpassword">Esqueceu sua senha?</Link>

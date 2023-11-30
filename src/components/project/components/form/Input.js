@@ -1,6 +1,6 @@
 import style from './Input.module.css'
 import PropsType from 'prop-types'
-export default function Input({type, name, placeholder, handleOnChange, value}){
+export default function Input({type, name, placeholder,onChange, value}){
 
     return(
         <div className={style.form_control}>
@@ -9,11 +9,13 @@ export default function Input({type, name, placeholder, handleOnChange, value}){
                 type={type}
                 name={name}
                 placeholder={placeholder}
-                handleOnChange={handleOnChange}
+                onChange={onChange}
                 value={value}
                 required
             />
         </div>
+            
+        
     )
 }
 Input.propType = {

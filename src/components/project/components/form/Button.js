@@ -1,9 +1,9 @@
 import style from './Button.module.css'
 import PropsType from 'prop-types'
 
-export default function Button({text}){
+export default function Button({text, onClick}){
     return(
-        <button className={style.btn}>{text}</button>
+        <button className={style.btn} onClick={onClick}>{text}</button>
     )
 }
 Button.propTypes = {
