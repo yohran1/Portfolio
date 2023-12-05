@@ -16,9 +16,7 @@ export default function Login(){
     const [userEmail, setUserEmail] = useState()
     const [userPassword, setUserPassword] = useState()
 
-    function clearEmail(){
-        setUserEmail('')
-    }
+    
     function enviarDados(event){
         event.preventDefault()
         setUserEmail(email)

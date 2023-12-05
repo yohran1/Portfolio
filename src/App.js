@@ -9,10 +9,16 @@ import PecaOnline from './components/project/components/pages/PecaOnline';
 import Contato from './components/project/components/pages/Contato'
 import SobreProject from './components/project/components/pages/Sobre';
 import Error from './components/layout/Error';
+import {Provider} from 'react-redux'
+import {legacy_createStore} from 'redux'
+import loginReducer from './components/project/reducers/loginReducer'
+
+const store = legacy_createStore(loginReducer)
 
 function App() {
   return (
     <BrowserRouter>
+        <Provider store={store}>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/sobre' element={<Sobre />} />
@@ -25,6 +31,7 @@ function App() {
             <Route path='/projeto/sobre' element={<SobreProject />} />
             <Route path='/projeto/error' element={<Error />} />
           </Routes> 
+        </Provider>
     </BrowserRouter>
   );
 }

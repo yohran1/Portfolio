@@ -1,6 +1,7 @@
 import style from './NavBar.module.css'
 import icon from '../img/icons/icon-1.png'
 import { Link } from 'react-router-dom'
+import AuthenticationButton from './form/AuthenticationButton'
 
 export default function NavBar(){
 
@@ -24,6 +25,7 @@ export default function NavBar(){
             
             <div className={style.login_btn}>
                 <a href='http://localhost:3000/projeto/login'><button>Login | Registro</button></a>
+                <AuthenticationButton />
             </div>
         </nav>
     )
