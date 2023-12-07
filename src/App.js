@@ -10,10 +10,15 @@ import Contato from './components/project/components/pages/Contato'
 import SobreProject from './components/project/components/pages/Sobre';
 import Error from './components/layout/Error';
 import {Provider} from 'react-redux'
-import {legacy_createStore} from 'redux'
+import {configureStore} from '@reduxjs/toolkit'
 import loginReducer from './components/project/reducers/loginReducer'
+import PrivateRoute from './components/project/components/PrivateRoutes';
 
-const store = legacy_createStore(loginReducer)
+const store = configureStore({
+  reducer: {
+    login: loginReducer
+  }
+})
 
 function App() {
   return (
@@ -26,7 +31,7 @@ function App() {
             <Route path='/projeto/register' element={<Register />} />
             <Route path='/projeto/forgotpassword' element={<ForgotPassword />} />
             <Route path='/projeto/srmackfly' element={<SrMackfly />}/>
-            <Route path='/projeto/pecaOnline' element={<PecaOnline />}/>
+            <PrivateRoute path='/projeto/pecaOnline'><PecaOnline /></PrivateRoute>
             <Route path='/projeto/contato' element={<Contato />} />
             <Route path='/projeto/sobre' element={<SobreProject />} />
             <Route path='/projeto/error' element={<Error />} />

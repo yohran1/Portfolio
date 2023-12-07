@@ -4,16 +4,16 @@ import { useDispatch, useSelector } from 'react-redux'
 
 export default function AuthenticationButton(props){
 
-    const login = useSelector(state => state)
+    const isAuthenticated = useSelector(state => state.login.isAuthenticated);
     const dispatch = useDispatch()
 
     return(
-        login ?
-        <button onClick={() => {dispatch(logoutAction())}}>
-            logout
+        isAuthenticated ?
+        <button onClick={() => { dispatch(logoutAction()); }}>
+            Logout
         </button>:
-        <button onClick={() => {dispatch(loginAction())}}>
-            login
+        <button onClick={() => { dispatch(loginAction()); }}>
+            Login
         </button>
     )
 }
