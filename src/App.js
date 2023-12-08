@@ -31,7 +31,8 @@ function App() {
             <Route path='/projeto/register' element={<Register />} />
             <Route path='/projeto/forgotpassword' element={<ForgotPassword />} />
             <Route path='/projeto/srmackfly' element={<SrMackfly />}/>
-            <PrivateRoute path='/projeto/pecaOnline'><PecaOnline /></PrivateRoute>
+            {/* <Route path='/projeto/pecaOnline' element={<PecaOnline />} /> */}
+            <PrivateRoute path='/projeto/pecaOnline' element={<PecaOnline />}/>
             <Route path='/projeto/contato' element={<Contato />} />
             <Route path='/projeto/sobre' element={<SobreProject />} />
             <Route path='/projeto/error' element={<Error />} />
