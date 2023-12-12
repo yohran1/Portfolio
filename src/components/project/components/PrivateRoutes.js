@@ -7,7 +7,7 @@ export default function PrivateRoute({ path: Path, element: Component, ...rest }
 
   return (
     <Route path={Path} {...rest} element={({ location }) => 
-    
+      
          isAuthenticated ? <Component /> : 
         (
           <Navigate to="/projeto/login" state={{ from: location }} replace={true} />

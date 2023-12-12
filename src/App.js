@@ -12,7 +12,6 @@ import Error from './components/layout/Error';
 import {Provider} from 'react-redux'
 import {configureStore} from '@reduxjs/toolkit'
 import loginReducer from './components/project/reducers/loginReducer'
-import PrivateRoute from './components/project/components/PrivateRoutes';
 
 const store = configureStore({
   reducer: {
@@ -21,7 +20,7 @@ const store = configureStore({
 })
 
 function App() {
-  return (
+  return ( 
     <BrowserRouter>
         <Provider store={store}>
           <Routes>
@@ -31,8 +30,7 @@ function App() {
             <Route path='/projeto/register' element={<Register />} />
             <Route path='/projeto/forgotpassword' element={<ForgotPassword />} />
             <Route path='/projeto/srmackfly' element={<SrMackfly />}/>
-            {/* <Route path='/projeto/pecaOnline' element={<PecaOnline />} /> */}
-            <PrivateRoute path='/projeto/pecaOnline' element={<PecaOnline />}/>
+            <Route path='/projeto/pecaOnline' element={<PecaOnline />} />
             <Route path='/projeto/contato' element={<Contato />} />
             <Route path='/projeto/sobre' element={<SobreProject />} />
             <Route path='/projeto/error' element={<Error />} />
